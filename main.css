@@ -1,0 +1,162 @@
+body{
+	background-color: white;
+	font-size: 16px;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 300;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+hr{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: block;
+	width: 100%;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid #000000;
+}
+
+	body{
+		display: grid;
+		grid-template-areas: 
+		"fejlec"
+		"kontent"
+		"lablec"
+		;
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh;
+	}
+
+	header{
+		background-color: white;
+		grid-area: fejlec;
+	}
+
+	main{
+		background-color: white;
+		grid-area: kontent;
+	}
+
+	footer{
+		background-color: white;
+		grid-area: lablec;
+	}
+
+	#header_alja div{
+		display: inline-block;
+	}
+
+	#header_alja{
+		text-align: center;
+		padding-top: 1rem;
+	}
+
+	#header_alja a{
+		font-size: 1.2rem;
+		margin: 1rem 5rem;
+		display: inline-block;
+		text-decoration: none;
+		color: #000000;
+	}
+
+	#header_alja a:hover{
+		text-decoration: underline;
+		color: blue;
+	}
+
+	main p{
+		margin-left: 20rem;
+		margin-right: 20rem;
+	}
+
+	main ul{
+		margin-left: 22rem;
+		margin-right: 20rem;
+	}
+
+	main .kartya{
+		max-width: 100%;
+		background-color: white;
+		border: none;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.kartya{
+	background-color: black;
+	max-width: 50%;
+	border: 2px solid black;
+	padding: 40px 15px 20px;
+	text-align: center;
+	}
+
+	.kartya img{
+		display: inline-block;
+	}
+
+	.kepek_grid_racs{
+		display: grid;
+		grid-template-columns: repeat(3, minmax(13.5rem, 1fr));
+		grid-gap: 1rem;
+		margin-left: 20rem;
+		margin-right: 20rem;	
+	}
+
+	.kep_kartya .kep{
+		height: 16rem;
+		background-color: black;
+		text-align: center;
+	}
+
+	.kep_kartya .kep img{
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+	}
+
+	.terv_grid_racs{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+		grid-gap: 1rem;
+		margin-left: 20rem;
+		margin-right: 20rem;	
+	}
+
+	.terv_kartya .terv{
+		height: 16rem;
+		background-color: white;
+		text-align: center;
+	}
+
+	.terv_kartya .terv img{
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+	}
+
+	footer{
+		text-align: right;
+	}
+
+	footer img{
+		margin-right: 20rem;
+	}
+
+	.footer_bal{
+		float: left;
+		text-align: left;
+	}
+
+	.footer_bal p{
+		margin-left: 20rem;
+	}
